@@ -1,0 +1,463 @@
+body {
+    background-image: url('background.png');
+    margin: 0;
+
+}
+
+h1 {
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    color: #32684c;
+    /* green */
+}
+h2 {
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+    color: #3d8b87;
+    /* turquiz */
+}
+h3 {
+    /* orange */
+    color: #d0906c;
+    text-align: center;
+        font-family: 'Amatic SC', cursive;
+        font-weight: 600;
+
+}
+input{
+
+    font-family: 'Comfortaa', cursive;
+    color: #3d8b87;
+    border: #75b9aa 1px solid;
+    margin: 4px;
+    text-align: center;
+
+
+}
+.center {
+    display: flex;
+    justify-content: center;
+}
+.largeImg img{
+    height: 200px;
+    width: 200px;
+    margin-top: -35px;
+    margin-bottom: -35px;
+}
+.align {
+    text-align: center;
+}
+.align button {
+    display: block;
+    margin: auto;
+    font-family: 'Comfortaa', cursive;
+    width: 80px;
+    height: 20px;
+    border: #75b9aa 2px solid;
+    margin-top: 10px;
+    box-shadow: 5px 2.2px 3.5px 1px rgba(103, 172, 157,0.55);
+
+}
+.align p {
+    font-family: 'Comfortaa', cursive;
+    color: #32684c;
+    font-size: 12px;
+    margin-top: 20px;
+
+}
+.align p a {
+    color: #32684c;
+}
+.headerLogo {
+    display: flex;
+    justify-content: flex-start;
+}
+.headerLogo img {
+    height: 60px;
+    width: 60px;
+}
+.headerLogo h4{
+    font-family: 'Comfortaa', cursive;
+
+    color: #32684c;
+
+}
+.avatar img {
+    height: 45px;
+    width: 45px;
+     border-radius: 1px 12px 2px;
+     margin: 5px;
+     border: 1px #d0906c solid;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border-bottom: 1px #2c3d4d solid;
+}
+.header a {
+    text-decoration: none;
+}
+.navbar {
+    display: flex;
+    justify-content: space-around;
+}
+.navbar h4 {
+    font-family: 'Comfortaa', cursive;
+    color: #32684c;
+    font-size:9px;
+    padding: 5px;
+    margin-top: 20px;
+    /* padding-left:8px; */
+}
+.navbar a {
+    text-decoration: none;
+}
+
+.relative {
+    position: relative;
+
+}
+
+.outerUploader {
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0,0,0,0.5);
+
+}
+
+.innerUploader {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    bottom: 20%;
+    right: 20%;
+    background-image: url('background.png');
+    text-align: center;
+}
+.innerUploader input {
+    visibility: hidden;
+    top:0;
+    bottom: 0;
+    right: 0;
+    left:0;
+    position: absolute;
+    z-index: 100;
+}
+.innerUploader label {
+    position: relative;
+    display: block;
+    margin: auto;
+    font-family: 'Comfortaa', cursive;
+    width: 140px;
+    height: 30px;
+    border: #75b9aa 2px solid;
+    margin-top: 10px;
+    box-shadow: 5px 2.2px 3.5px 1px rgba(103, 172, 157,0.55);
+    text-align: center;
+    padding-top: 8px;
+    color: #3d8b87;
+
+}
+.innerUploader h3 {
+    margin-bottom: 40px;
+}
+#x {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    font-family: 'Comfortaa', cursive;
+    color: #3d8b87;
+
+}
+.profile {
+    display: flex;
+}
+.profile .avatar img {
+    height: 200px;
+    width: 200px;
+    margin-left: 10px;
+
+
+}
+
+.profile h3 {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+.profile div button {
+    font-family: 'Comfortaa', cursive;
+    width: 180px;
+    height: 20px;
+    border: #75b9aa 2px solid;
+    margin-top: 5px;
+    box-shadow: 5px 2.2px 3.5px 1px rgba(103, 172, 157,0.55);
+    margin-bottom: 10px;
+    margin-left: 11%;
+}
+
+
+
+.editors {
+    margin-left: 40px;
+}
+.editors div div div h4 {
+    font-family: 'Comfortaa', cursive;
+    color: #32684c;
+}
+.editors div div div p {
+    font-family: 'Amatic SC', cursive;
+    color: #2c3d4d;
+}
+.editors div div div button {
+    font-family: 'Comfortaa', cursive;
+    width: 200px;
+    height: 20px;
+    border: #75b9aa 2px solid;
+    margin-top: 0;
+    box-shadow: 5px 2.2px 3.5px 1px rgba(103, 172, 157,0.55);
+    margin-bottom: 10px;
+}
+.editors div div p {
+    font-family: 'Comfortaa', cursive;
+    color: #32684c;
+}
+
+
+
+.editors div div button {
+    display: block;
+    font-family: 'Comfortaa', cursive;
+    width: 75px;
+    height: 20px;
+    border: #75b9aa 2px solid;
+    margin: auto;
+    margin-top: 0;
+    box-shadow: 5px 2.2px 3.5px 1px rgba(103, 172, 157,0.55);
+    margin-bottom: 10px;
+    color: #32684c;
+
+
+}
+textarea {
+    width: 300px;
+    height: 150px;
+    font-family: 'Amatic SC', cursive;
+    color: #3d8b87;
+    border: #75b9aa 1px solid;
+    font-size: 15px;
+
+}
+.members {
+    display: flex;
+    margin-bottom: 10px;
+}
+.members img {
+    height: 100px;
+    width: 80px;
+    margin-left: 10px;
+}
+.members h3 {
+    font-size: 20px;
+    margin-left: 15px;
+
+}
+.memberlinks {
+        text-decoration: none;
+}
+.searchusers {
+    text-align: center;
+
+}
+.searchusers button {
+    font-family: 'Comfortaa', cursive;
+    width: 100px;
+    height: 20px;
+    border: #75b9aa 2px solid;
+    margin-top: 0;
+    box-shadow: 5px 2.2px 3.5px 1px rgba(103, 172, 157,0.55);
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.searchusers input {
+    width: 200px;
+}
+.newUsers {
+    margin-bottom: 15px;
+}
+.friends {
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.friend {
+    text-align: center;
+}
+.friend img {
+    height: 100px;
+    width: 80px;
+    margin-left: 10px;
+}
+.friend h3 {
+    font-size: 20px;
+    margin-left: 15px;
+    margin-bottom: 8px;
+}
+.friends button {
+    font-family: 'Comfortaa', cursive;
+    width: 120px;
+    height: 20px;
+    border: #75b9aa 2px solid;
+    margin-top: 0;
+    box-shadow: 5px 2.2px 3.5px 1px rgba(103, 172, 157,0.55);
+    margin-bottom: 25px;
+    margin-left: 25%;
+    font-size: 9px;
+}
+.flexi-chat {
+    display:flex;
+    justify-content: space-around;
+    border: #75b9aa 0.5px solid;
+    box-shadow: 5px 2.2px 3.5px 1px rgba(103, 172, 157,0.55);
+    align-items: center;
+
+}
+.flexi-chat div p {
+    font-family: 'Comfortaa', cursive;
+    color: #32684c;
+    font-size: 12px;
+}
+.flexi-chat div h2 {
+    font-size: 10px;
+}
+.chat-container {
+    width: 40%;
+border: #75b9aa 1.5px solid;
+
+
+}
+.chat {
+    margin-top: 8px;
+}
+.chat img {
+    height: 70px;
+    width: 50px;
+    margin-top: 4px;
+}
+.chat h3 {
+    margin-top: 3px;
+}
+.chat-component {
+    text-align: center;
+}
+.flex {
+    display: flex;
+    justify-content: space-around;
+}
+.chat-component textarea {
+    margin-top: 35px;
+    box-shadow: 5px 2.2px 3.5px 1px rgba(103, 172, 157,0.55);
+    height: 100px;
+
+}
+.chat-component button {
+    display: block;
+    margin: auto;
+    font-family: 'Comfortaa', cursive;
+    width: 80px;
+    height: 20px;
+    border: #75b9aa 2px solid;
+    margin-top: 10px;
+    box-shadow: 5px 2.2px 3.5px 1px rgba(103, 172, 157,0.55);
+
+}
+.chat-component h3:first-child  {
+    font-size: 30px;
+}
+.online-user {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: -20px;
+
+}
+#green {
+    height: 10px;
+    width: 10px;
+    margin-right: 10px;
+}
+.online-user img:nth-child(2n){
+    height: 30px;
+    width: 23px;
+    margin-right: 10px;
+}
+.online-user h3 {
+    color: #3d8b87;
+}
+.online h2 {
+    font-size: 11px;
+    margin-bottom: 0;
+    font-family: 'Comfortaa', cursive;
+}
+.messanger {
+    display: flex;
+    justify-content: center;
+}
+.reference {
+    margin-top: 150px;
+    height: 1px;
+}
+#private img {
+    height: 35px;
+    width: 25px;
+    margin-top: 4px;
+}
+#private h3 {
+    font-size: 10px;
+}
+
+.flexi-chat div p {
+    font-family: 'Comfortaa', cursive;
+    color: #32684c;
+    font-size: 11px;
+}
+.flexi-chat.private div h2 {
+    font-size: 8px;
+}
+
+button.pm {
+    font-family: 'Comfortaa', cursive;
+    width: 150px;
+    height: 20px;
+    border: #75b9aa 2px solid;
+    margin-bottom: 15px;
+    margin-left: 15%;
+    margin-top: -25px;
+    box-shadow: 5px 2.2px 3.5px 1px rgba(103, 172, 157,0.55);
+
+}
+.pm-input {
+    text-align: center;
+}
+.pm-input textarea {
+    margin-top: 15px;
+}
+.pm-input button {
+    display: block;
+    margin: auto;
+    font-family: 'Comfortaa', cursive;
+    width: 70px;
+    height: 20px;
+    border: #75b9aa 2px solid;
+    margin-bottom: 25px;
+    box-shadow: 5px 2.2px 3.5px 1px rgba(103, 172, 157,0.55);
+
+}
