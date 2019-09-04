@@ -31,6 +31,6 @@ CREATE TABLE privateMessages (
     sender_id INT,
     receiver_id INT,
     message TEXT,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     seen BOOLEAN DEFAULT true
 );
