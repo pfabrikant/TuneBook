@@ -54,7 +54,7 @@ export default class App extends React.Component {
                             first={this.state.first}
                             last={this.state.last}
                             avatarUrl={
-                                this.state.avatarUrl || "../public/avatar.jpg"
+                                this.state.avatarurl || "../public/avatar.jpg"
                             }
                             toggleDiv={this.toggleDiv}
                             openUploader={this.state.openUploader}
@@ -69,7 +69,7 @@ export default class App extends React.Component {
                                     <Profile
                                         last={this.state.last}
                                         avatarUrl={
-                                            this.state.avatarUrl ||
+                                            this.state.avatarurl ||
                                             "../public/avatar.jpg"
                                         }
                                         toggleDiv={this.toggleDiv}

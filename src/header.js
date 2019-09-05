@@ -3,7 +3,7 @@
 import React from "react";
 import instance from "../lib/axios";
 import { Link } from "react-router-dom";
-import { socket } from "./socket";
+// import { socket } from "./socket";
 // import { useSelector } from 'react-redux';
 
 export function Header(props) {
