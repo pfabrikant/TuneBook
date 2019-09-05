@@ -3,6 +3,13 @@
 import React from "react";
 import instance from "../lib/axios";
 import { Link } from "react-router-dom";
+
+////////////////////////////////////////////////
+///// commented out code in this module is /////
+///// part of an extra feature which is still //
+///// not ready - notification about a new /////
+//// unread PM ////////////////////////////////
+
 // import { socket } from "./socket";
 // import { useSelector } from 'react-redux';
 

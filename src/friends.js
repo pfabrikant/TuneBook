@@ -1,3 +1,5 @@
+// The friends component. Showing lists of friends and friend requests (sent and received)
+
 import React, { useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {

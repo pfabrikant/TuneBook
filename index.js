@@ -1,3 +1,5 @@
+// This module is setting up the server-side http and socket request and response handling
+
 const express = require("express");
 const app = express();
 const compression = require("compression");
