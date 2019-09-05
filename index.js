@@ -72,7 +72,6 @@ app.use("/public/:fileName", (req, res) => {
     res.sendFile(__dirname + "/public/" + req.params.fileName);
 });
 app.get("/logout", (req, res) => {
-    console.log("logout route runs");
     req.session = null;
     res.redirect("/register");
 });
@@ -82,7 +81,8 @@ app.get("/getUserInfo", async (req, res) => {
         const { rows } = await db.getUserInfo(req.session.loginId);
         req.session.first = rows.first;
         req.session.last = rows.last;
-        req.session.avatarUrl = rows.avatarUrl;
+        req.session.avatarUrl = rows.avatarurl;
+        console.log(rows[0]);
         res.json(rows[0]);
     } catch (err) {
         console.log("error in GET /getUserInfo: ", err.message);
@@ -211,6 +211,7 @@ app.post("/uploadAvatar", uploader.single("file"), s3.uploadS3, (req, res) => {
     }
 });
 app.post("/updateProfile", (req, res) => {
+    console.log(Object.keys(req.body)[0], Object.values(req.body)[0]);
     db.updateProfile(
         req.session.loginId,
         Object.keys(req.body)[0],
@@ -426,18 +427,16 @@ io.on("connection", async function(socket) {
 
                 //emitting to this sockets
                 arrOfSockets.forEach(socketId =>
-                    io
-                        .to(socketId)
-                        .emit("updateNewPm", {
-                            receiver_id: obj.receiver_id,
-                            sender_id: obj.sender_id,
-                            message: obj.message,
-                            id: rows[0].id,
-                            created_at: rows[0].created_at,
-                            avatarurl: obj.avatarurl,
-                            first: obj.first,
-                            last: obj.last
-                        })
+                    io.to(socketId).emit("updateNewPm", {
+                        receiver_id: obj.receiver_id,
+                        sender_id: obj.sender_id,
+                        message: obj.message,
+                        id: rows[0].id,
+                        created_at: rows[0].created_at,
+                        avatarurl: obj.avatarurl,
+                        first: obj.first,
+                        last: obj.last
+                    })
                 );
             }
         );
