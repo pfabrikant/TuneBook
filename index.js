@@ -17,9 +17,11 @@ var uidSafe = require("uid-safe");
 var path = require("path");
 const fs = require("fs");
 const server = require("http").Server(app);
-const io = require("socket.io")(server, { origins: "localhost:8080" });
+const io = require("socket.io")(server, {
+    origins: "process.env.PORT || localhost:8080"
+});
 
-// object of users obline, keys are userIds, values are arrays of socket IDs
+// object of users online, keys are userIds, values are arrays of socket IDs
 const onlineUsers = {};
 
 // boilerplate for renaming and storing files in the /uploads directory using multer and uidSafe
