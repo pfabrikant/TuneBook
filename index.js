@@ -17,9 +17,7 @@ var uidSafe = require("uid-safe");
 var path = require("path");
 const fs = require("fs");
 const server = require("http").Server(app);
-const io = require("socket.io")(server, {
-    origins: "process.env.PORT || localhost:8080"
-});
+const io = require("socket.io")(server);
 
 // object of users online, keys are userIds, values are arrays of socket IDs
 const onlineUsers = {};
